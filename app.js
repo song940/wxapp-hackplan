@@ -8,7 +8,7 @@ App({
    * @param  {[type]} header [description]
    * @return {[type]}        [description]
    */
-  request: function(method, url, data, header){
+  request: function(method, url, data = {}, header = {}){
     if(typeof method === 'object'){
       url    = method.url;
       data   = method.data;
@@ -18,8 +18,9 @@ App({
     var req = {
       method: method,
       url   : url,
-      header: {},
-      data  : {}
+      header: header,
+      data  : data,
+      config: {},
     }, def = {
       header: function(name, value){
         if(value) req.header[ name ] = value;
@@ -40,12 +41,18 @@ App({
         req = middleware.call(def, req);
         return def;
       },
+      config(name, value){
+        req.config[name] = value;
+        return def;
+      },
       end: function(callback, done){
         var p = new Promise(function(accept, reject){
          if(!callback){
-          wx.showNavigationBarLoading();
+           if(req.config.loading){
+            wx.showLoading();
+           }
           callback = function(err, res){
-            wx.hideNavigationBarLoading();
+            wx.hideLoading();
             if(err) return reject(err);
             else accept(res);
           };

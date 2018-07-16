@@ -9,6 +9,7 @@ Page({
     const { query } = this.data;
     const app = getApp();
     app.request()
+    .config('loading', 1)
     .get('https://api.lsong.org/translate')
     .query({ text: query })
     .end()
