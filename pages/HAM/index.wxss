@@ -1,0 +1,30 @@
+page{
+  background: #f0f0f0;
+}
+
+.question{
+  width: 90%;
+  padding: 20rpx;
+  margin: 20rpx auto;
+  background: #fff;
+  font-size: 24rpx;
+}
+
+.question-id{
+  color: #fff;
+  padding: 2rpx 3px;
+  font-size: 22rpx;
+  border-radius: 3px;
+  margin-right: 5rpx;
+  background-color: #ccc;
+}
+
+.question-options{
+  margin-top: 10rpx;
+}
+.question-option-A{
+  color: green;
+}
+.question-option:before{
+  content: '- ';
+}
