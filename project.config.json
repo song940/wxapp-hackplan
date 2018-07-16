@@ -1,5 +1,5 @@
 {
-	"description": "项目配置文件。",
+	"description": "HackPlan",
 	"packOptions": {
 		"ignore": []
 	},
@@ -33,13 +33,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "HAM",
 					"pathName": "pages/HAM/index",
-					"query": ""
+					"query": "level=C"
 				}
 			]
 		}

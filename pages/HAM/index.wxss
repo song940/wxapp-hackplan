@@ -19,6 +19,12 @@ page{
   background-color: #ccc;
 }
 
+.question-image{
+  width: 100%;
+  margin-top: 20rpx;
+  border: 1px solid #ccc;
+}
+
 .question-options{
   margin-top: 10rpx;
 }

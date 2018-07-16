@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/Translate/index",
-    "pages/HAM/index"
+    "pages/HAM/index",
+    "pages/Translate/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
