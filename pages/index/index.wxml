@@ -1,0 +1,26 @@
+<view class="translate" >
+  <view class="query">
+    <textarea class="words" bindinput="onTextChange" ></textarea>
+    <button ontap="onTapTranslate" >Translate</button>
+  </view>
+  <view class="result">
+
+    <ul class="translation" >
+      <li wx:for="{{ translation }}" wx:key="*item" >{{ item }}</li>
+    </ul>
+
+    <view class="basic" >
+      <text>{{ basic.phonetic }}</text>
+      <text>{{ basic['us-phonetic'] }}</text>
+      <text>{{ basic['uk-phonetic'] }}</text>
+      <ul>
+        <li wx:for="{{ basic.explains }}" wx:key="*item" >{{ item }}</li>
+      </ul>
+    </view>
+
+    <ul class="web" >
+      <li wx:for="{{ web }}" wx:key="*item" >{{ item.key }}: {{ item.value }}</li>
+    </ul>
+
+  </view>
+</view>
