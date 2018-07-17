@@ -2,6 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/HAM/index",
+    "pages/Podcast/index",
+    "pages/TinyURL/index",
     "pages/Translate/index"
   ],
   "window":{

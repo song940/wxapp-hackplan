@@ -4,6 +4,7 @@
   <view class="apps">
     <navigator url="/pages/Translate/index" >Translate</navigator>
     <navigator url="/pages/HAM/index" >HAM</navigator>
+    <navigator url="/pages/Podcast/index" >Podcast</navigator>
     <navigator url="/pages/TinyURL/index" >TinyURL</navigator>
   </view>
 

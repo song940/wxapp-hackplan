@@ -79,5 +79,13 @@ App({
       })();
     });
     return def;
+  },
+  invoke(fn, params = {}){
+    if(typeof fn === 'string') fn = wx[fn];
+    return new Promise((resolve, reject) => {
+      params.success = resolve;
+      params.fail = reject;
+      return fn(params);
+    });
   }
 });

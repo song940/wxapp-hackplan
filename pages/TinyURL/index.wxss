@@ -1,0 +1,16 @@
+page{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 60rpx;
+  font-family: monospace;
+  margin: 20% auto;
+}
+
+input{
+  margin-bottom: 10rpx;
+  border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,7 @@
+<view>
+  <view class="title" >TinyURL</view>
+  <input data-name="url" bindinput="onInput" value="{{ url }}" />
+  <input data-name="alias" bindinput="onInput" value="{{ alias }}" />
+  <button bindtap="onTapShort" >Generate</button>
+  <view wx:if="{{ alias }}">http://go.lsong.org/{{ alias }}</view>
+</view>
