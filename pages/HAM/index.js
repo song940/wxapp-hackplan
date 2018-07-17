@@ -6,8 +6,12 @@ Page({
     .config('loading', true)
     .end()
     .then(res => res.data)
-    .then(questions => {
-      this.setData({ questions });
-    })
+    .then(questions => questions.map(question => {
+      question.options = [].map.call('ABCD', (option, i) => {
+        const text = question[option];
+        return { text, correct: i === 0 };
+      }).sort(() => Math.random() - .5);
+      return question;
+    })).then(questions => this.setData({ questions }));
   }
 });
