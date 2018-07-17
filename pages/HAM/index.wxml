@@ -1,19 +1,3 @@
 <view class="questions" >
-  <view wx:for="{{ questions }}" wx:for-item="question" wx:key="{{ question.I }}" >
-    <view class="question" >
-      <view class="question-title" >
-        <text class="question-id" >{{ question.I }}</text>
-        <text>{{ question.Q }}</text>
-      </view>
-      <view wx:if="{{ question.P }}" >
-        <image class="question-image" mode="aspectFit" src="https://lsong.org/~lsong/HAM/img/{{question.P}}" />
-      </view>
-      <view class="question-options" >
-        <view class="question-option question-option-A" >{{ question.A }}</view>
-        <view class="question-option question-option-B" >{{ question.B }}</view>
-        <view class="question-option question-option-C" >{{ question.C }}</view>
-        <view class="question-option question-option-D" >{{ question.D }}</view>
-      </view>
-    </view>
-  </view>
+  <question wx:for="{{ questions }}" wx:for-item="question" wx:key="{{ question.I }}" question="{{ question }}" />
 </view>
