@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/User/login",
+    "pages/Index/index",
     "pages/HAM/index",
     "pages/Podcast/index",
     "pages/TinyURL/index",
@@ -8,8 +9,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
     "navigationBarTitleText": "HackPlan",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#fff"
+
   }
 }
