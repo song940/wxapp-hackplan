@@ -1,8 +1,10 @@
 {
+  "cloud": true,
   "pages":[
-    "pages/User/login",
     "pages/Index/index",
+    "pages/User/login",
     "pages/HAM/index",
+    "pages/Forum/index",
     "pages/Podcast/index",
     "pages/TinyURL/index",
     "pages/Translate/index"

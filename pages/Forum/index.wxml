@@ -1,0 +1,8 @@
+<view class="forum">
+  <text class="h1 title" >Forum</text>
+  <view class="topics" >
+    <view class="topic" wx:for="topics" wx:for-item="topic" >
+      <text>{{ topic.title }}</text>
+    </view>
+  </view>
+</view>
