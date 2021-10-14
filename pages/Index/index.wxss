@@ -1,9 +1,8 @@
-page{
+page {
   background: #f0f0f0;
 }
 
 .title {
-  width: 80%;
   height: 200rpx;
   color: #fff;
   margin: 20% auto;
@@ -16,7 +15,6 @@ page{
 }
 
 navigator {
-  width: 80%;
   height: 100rpx;
   margin: 20rpx auto;
   background: #fff;
@@ -25,7 +23,7 @@ navigator {
   justify-content: center;
 }
 
-.copyright{
+.copyright {
   color: #ccc;
   display: block;
   font-size: 22rpx;

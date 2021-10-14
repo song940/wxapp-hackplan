@@ -1,19 +1,19 @@
 {
-  "cloud": true,
-  "pages":[
+  "pages": [
     "pages/Index/index",
     "pages/User/login",
     "pages/HAM/index",
+    "pages/MQTT/index",
     "pages/Forum/index",
     "pages/Podcast/index",
     "pages/TinyURL/index",
-    "pages/Translate/index"
+    "pages/Translator/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarTextStyle":"black",
-    "navigationBarTitleText": "HackPlan",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "极客松",
     "navigationBarBackgroundColor": "#fff"
-
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

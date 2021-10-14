@@ -16,7 +16,7 @@ Page({
     const { alias, url } = this.data;
     const app = getApp();
     app.request()
-    .post('http://go.lsong.org')
+    .post('https://api.lsong.me/tinyurl')
     .send({ alias, url })
     .end()
     .then(res => res.data)

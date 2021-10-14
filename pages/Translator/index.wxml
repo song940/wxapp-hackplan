@@ -1,4 +1,5 @@
-<view class="translate" >
+<view class="translate page" >
+  <view class="title" >Translator</view>
   <view class="query">
     <textarea class="words" bindinput="onTextChange" ></textarea>
     <button ontap="onTapTranslate" >Translate</button>

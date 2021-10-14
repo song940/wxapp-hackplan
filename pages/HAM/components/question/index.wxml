@@ -11,7 +11,7 @@
         bindtap="onTapOption"
         wx:for="{{ question.options }}" 
         wx:for-item="option"
-        wx:key="{{ question.I }}"
+        wx:key="I"
         data-option="{{ option }}"
         class="question-option question-option-{{index}} question-option-{{ option.style }}" >
         {{ option.text }}

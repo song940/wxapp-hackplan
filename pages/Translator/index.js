@@ -10,8 +10,8 @@ Page({
     const app = getApp();
     app.request()
     .config('loading', 1)
-    .get('https://api.lsong.org/translate')
-    .query({ text: query })
+    .get('https://api.lsong.one:8443/fanyi')
+    .query({ q: query })
     .end()
     .then(res => res.data)
     .then(res => this.setData(res));

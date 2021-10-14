@@ -1,27 +1,29 @@
-page{
+page {
   background: #f0f0f0;
 }
 
-input{
-  text-align: center;
+.page {
+  width: 90%;
+  margin: auto;
+  padding: 50rpx 0;
+}
+
+.title {
+  font-size: 60rpx;
   font-family: monospace;
-  margin-bottom: 20rpx;
-  border-bottom: 2px solid #333;
-}
-input:focus{
-
+  margin: 20% auto;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-.h1{
+.h1 {
   display: block;
   font-size: 50rpx;
 }
 
-.title{
+.title {
   margin: 10% 0 10% 0;
   text-align: center;
   text-transform: uppercase;

@@ -1,13 +1,12 @@
-<view>
-
-  <text class="title" >HackPlan</text>
+<view class="page">
+  <text class="title">HackPlan</text>
   <view class="apps">
-    <navigator url="/pages/Translate/index" >Translate</navigator>
-    <navigator url="/pages/HAM/index" >HAM</navigator>
-    <navigator url="/pages/Podcast/index" >Podcast</navigator>
-    <navigator url="/pages/TinyURL/index" >TinyURL</navigator>
+    <navigator url="/pages/MQTT/index">MQTT</navigator>
+    <!-- <navigator url="/pages/Translator/index">Translator</navigator> -->
+    <!-- <navigator url="/pages/HAM/index">HAM</navigator> -->
+    <!-- <navigator url="/pages/TinyURL/index">TinyURL</navigator> -->
+    <!-- <navigator url="/pages/Forum/index">Forum</navigator> -->
+    <!-- <navigator url="/pages/User/login">Login</navigator> -->
   </view>
-
-  <text class="copyright" >LSONG.ORG</text>
-
+  <text class="copyright">LSONG.ORG</text>
 </view>

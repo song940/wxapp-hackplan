@@ -1,3 +1,3 @@
 <view class="questions" >
-  <question wx:for="{{ questions }}" wx:for-item="question" wx:key="{{ question.I }}" question="{{ question }}" />
+  <question wx:for="{{ questions }}" wx:for-item="question" wx:key="I" question="{{ question }}" />
 </view>
